@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+
 import Todo from './components/todo'
 
 
@@ -12,4 +13,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

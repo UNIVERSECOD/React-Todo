@@ -1,6 +1,6 @@
-import React from 'react'
+import React , {useState}from 'react'
 import TodoInput from './TodoInput'
-import styles from "./style.css"
+import styles from "./style.module.css"
 import TodoList from './TodoList'
 
 export const Todo = () => {
