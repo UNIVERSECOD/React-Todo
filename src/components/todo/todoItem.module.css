@@ -1,0 +1,12 @@
+li button {
+    margin-left: 5px;
+    font-size: 14px; /* Adjusted font size */
+}
+
+li button.edit {
+    background-color: #fdd835; /* Yellow color for edit button */
+}
+
+li button.delete {
+    background-color: #f44336; /* Red color for delete button */
+}
