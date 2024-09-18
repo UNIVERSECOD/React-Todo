@@ -11,7 +11,7 @@ export const TodoInput = ({setTodos}) => {
       title: inputRef.current.value,
       completed: false,
     }
-    setTodos((prev) => [...prev, todo])
+    setTodos((prev) => [todo, ...prev])
   }
 
 

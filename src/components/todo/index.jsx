@@ -1,12 +1,12 @@
 import React , {useState}from 'react'
-import TodoInput from './TodoInput'
+import {TodoInput} from './TodoInput'
 import styles from "./style.module.css"
-import TodoList from './TodoList'
+import {TodoList} from './TodoList'
 
 export const Todo = () => {
   const [todos, setTodos] = useState ([]);
 
-  function handleTodoAction (type, todo) {
+ function handleTodoAction (type, todo) {
     if (type==="edit"){
     const todoIndex = todos.findIndex((t) => t.id === todo.id);
     todos[todoIndex].completed = todo.completed;
@@ -16,6 +16,7 @@ export const Todo = () => {
       setTodos(todos.filter((t) => t.id !== todo.id ));
     }
   }
+  // handleTodoAction("delete", { })
 
   return (
     <div className={styles.container}>
