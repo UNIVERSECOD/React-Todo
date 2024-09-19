@@ -25,7 +25,7 @@ const TodoList = ({ todos, handleTodoAction }) => {
     <div>
       {todos.map((todo) => (
         <TodoItem
-          hanhandleTodoAction={handleTodoAction}
+          handleTodoAction={handleTodoAction}
           key={todo.id}
           todo={todo}
         />
